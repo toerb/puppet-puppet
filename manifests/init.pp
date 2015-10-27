@@ -36,6 +36,5 @@ class puppet(
   include puppet::facter
   package { $package_name:
     ensure => $package,
-    notify => Service['puppet-agent'],
   }
 }
