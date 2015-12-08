@@ -66,7 +66,7 @@ class puppet::agent(
     require => Package[$puppet::package_name],
     owner   => 'root',
     group   => 'root',
-    mode    => '0640',
+    mode    => '0644',
     content => template("${module_name}/${sysconfig_template}"),
   }
 }
