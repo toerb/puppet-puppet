@@ -10,7 +10,8 @@
     rundir  = <%= scope.lookupvar('puppet::rundir') %>
     ssldir  = <%= scope.lookupvar('puppet::ssldir') %>
 
-[agent]
+  [agent]
+    stringify_facts = false
     classfile = $vardir/classes.txt
     localconfig = $vardir/localconfig
     environment = <%= @environment %>
