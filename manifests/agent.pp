@@ -19,6 +19,7 @@ class puppet::agent(
     $pluginsync  = true,
     $report      = true,
     $runinterval = 1800,
+    $configtimeout = undef,
   ) inherits puppet {
   case $::operatingsystem {
     /(Debian|Ubuntu)/: {

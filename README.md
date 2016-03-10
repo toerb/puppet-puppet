@@ -50,6 +50,7 @@ Default: `true`.
 * `certname` - Node’s certificate name, and the name it uses when requesting catalogs;
 defaults to the fully qualified domain name if not set. Default: `undef`.
 
+* `configtimeout` - Period of time (30s, 30m, 1h, ..) a client is waiting for config from master before considering a failure; defaults to 2m. Default: `undef`.
 
 ### puppet::facter
 This class installs facter.
